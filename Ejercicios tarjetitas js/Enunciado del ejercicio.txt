@@ -1,0 +1,14 @@
+crea una lista de productos en lo que se conoce como "cards" (tarjetitas) donde,
+ generes con javascript el html necesario para crear dichas tarjetas.
+  [EXTRA]: (El número de tarjetas se pedirá por "prompt"); 
+  Estas tarjeta tendrán:
+   - 1 icono/imagen 
+   - 1 título 
+   - 1 descripción 
+Esta tarjeta es lo que puedes ver en cualquier tienda online,
+donde el producto aparece en lo que llamamos "tarjeta".
+    
+La parte CSS para organizar las tarjetas y que tengan un responsive 
+design será utilizando Flexbox CSS o Grid CSS. La idea es usar lo minimo sin complicaciones,
+pero saber que se está haciendo y realizar comentarios en el código.
+¡ANOTAMOS TODAS LAS DUDAS!
