@@ -7,23 +7,22 @@
 window.addEventListener("load", function(event){
     let numerosImagenes = parseInt(this.prompt("Escribe el numero de imagenes que quieres"));
     
-    // Crear contenedor principal
-    let container = document.createElement("div");
-    container.className = "cards-container"; // Esta clase activa el Grid
+    let contenedor = document.createElement("div");
+    contenedor.className = "cards-contenedor";
     
     for(let i = 1; i <= numerosImagenes; i++) {
         let productDiv = document.createElement("div");
-        productDiv.className = "card"; // Clase para cada card individual
+        productDiv.className = "card"; 
         productDiv.innerHTML = `
             <img src="Assets/img/img${i}.jpg" alt="Imagen de producto ${i}">
             <h3>Producto ${i}</h3>
             <p>Descripción del producto ${i} con características destacadas</p>
         `;
         
-        container.appendChild(productDiv);
+        contenedor.appendChild(productDiv);
     }
     
-    document.body.appendChild(container);
+    document.body.appendChild(contenedor);
 });
 
 
