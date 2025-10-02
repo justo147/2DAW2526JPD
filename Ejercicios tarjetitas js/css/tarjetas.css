@@ -34,7 +34,7 @@ body {
 }
 
 /* CONTENEDOR PRINCIPAL CON GRID - 4 COLUMNAS */
-.cards-container {
+.cards-contenedor {
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* 4 columnas iguales */
     gap: 20px;
