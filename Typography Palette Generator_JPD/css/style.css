@@ -18,7 +18,7 @@
 
 /* Aplicación de las variables */
 body {
-  background: var(--color-bg);
+  background-color: var(--color-bg);
   color: var(--color-fg);
   font-family: var(--font-sans);
   font-size: var(--font-base);

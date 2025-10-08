@@ -25,13 +25,33 @@ img, picture, video, canvas, svg {
 
 
 /* reset.css — paso 4: formularios coherentes */
-input, button, textarea, select {
-  font: inherit;   /* heredan la tipografía del body */
-  margin: 0;       /* eliminamos márgenes por defecto */
+input:not([type="color"]), button, textarea, select {
+  font: inherit;
+  margin: 0;
+  color: inherit;
+  appearance: auto;
+}
+/* Asegurar que los inputs de color mantengan su apariencia nativa */
+input[type="color"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+  border: 0.25px solid #ccc;
+  border-radius: 0.5rem;
+  width: 50px;
+  height: 40px;
 }
 
+/* Restaurar comportamiento y estilo básico de botones sin afectar inputs */
 button {
-  background: none; /* eliminamos el fondo nativo */
-  border: none;     /* quitamos el borde automático */
+  appearance: button;
+  background: none;
+  border: none;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  padding: 0;
 }
+
 
